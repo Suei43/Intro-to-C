@@ -19,4 +19,9 @@ int main(){
         printf("%d\n", arr[i]);
         i++;
     }
+
+    //Working with arrays using pointers
+    int* arrptr = arr;
+    printf("%p\n",arrptr);
+    printf("%p\n",&arr[0]);
 }
