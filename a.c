@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int x,y;
 
-void printarr (int* arr[x][y]){
+void print(int x, int y, int arr[][y]){
     for(int i=0;i<x;i++){
         for(int j=0;j<y;j++){
             printf("%d ", arr[i][j]);
@@ -40,8 +39,9 @@ int main(){
     int arr2[len][len];
     for(int i=0;i<len;i++){
         for(int j=0;j<len;j++){
-            arr2[i][j] = ++counter;
+            arr2[i][j] = ++counter + counter;
         }
     }
-    printf("%d\n", arr2[3][4]); 
+    printf("%d\n", arr2[3][4]);
+    print(len,len,arr2); 
 }
