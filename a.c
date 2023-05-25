@@ -1,6 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int x,y;
+
+void printarr (int* arr[x][y]){
+    for(int i=0;i<x;i++){
+        for(int j=0;j<y;j++){
+            printf("%d ", arr[i][j]);
+        }
+    }
+}
+
 int main(){
     //ASCII mainpulation
     char letter = 'a';
@@ -33,5 +43,5 @@ int main(){
             arr2[i][j] = ++counter;
         }
     }
-    printf("%d\n", arr2[3][4]);
+    printf("%d\n", arr2[3][4]); 
 }
