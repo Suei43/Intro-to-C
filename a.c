@@ -24,4 +24,14 @@ int main(){
     int* arrptr = arr;
     printf("%p\n",arrptr);
     printf("%p\n",&arr[0]);
+
+    //Variable sized arrays
+    int len = 5, counter = 0;
+    int arr2[len][len];
+    for(int i=0;i<len;i++){
+        for(int j=0;j<len;j++){
+            arr2[i][j] = ++counter;
+        }
+    }
+    printf("%d\n", arr2[3][4]);
 }
